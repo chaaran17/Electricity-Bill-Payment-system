@@ -1,0 +1,377 @@
+<!-- Login Page -->
+<html>
+<body>
+<style>
+body{
+margin: 0;
+background-color: #caebf2 ;
+}
+.text
+{
+position: absolute;
+font-size: 25px;
+font-family: helvatica;
+text-align: center;
+top: 15%;
+left: 20%;
+color: black;
+padding-left:200px;
+padding-right: 200px;
+padding-bottom: 20px;
+border-radius: 35px;
+border-style: solid;
+border-width: 4px;
+background-color: #efefef ;
+}
+.btn{
+background-color: rgb(129, 152, 153);
+width: 10%;
+height: 15%;
+color:black;
+font-size: 16px;
+}
+#textbox{
+height: 30px ;
+font-size: 20px;
+}
+</style>
+<div >
+<div class="text">
+<form action="loginpage.php" method="POST">
+<h2>ELECTRICITY BOARD</h2>
+Phone Number:
+<input type="text" placeholder="Enter Phone Number" id="login_phone" required/>
+<br>
+Password:
+<input type="password" placeholder="Enter Password Here" id="login_pwd" required/><br>
+<br>
+<input type="submit" value="LOGIN" ><br>
+<div style="font-size: 20px;">
+<p>Not Registered? <a href="registerpage.html" style="color: black;" >Click Here</a></p><br>
+<a href="resetpassword.html" style="color:black;">Reset Password</a>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+<!-- About Page -->
+<html>
+<style>
+p{
+font-size: 23px;
+}
+body{
+margin-left: 2%;margin-right: 2%;
+background-color: #caebf2;
+margin-top: 2%;
+text-align: justify;
+}
+.imglogo{
+float:right;
+padding: 30 60 60 60px;
+}
+.board_head{
+border:solid;
+border-radius: 10px;
+margin-left: 32%;
+margin-right: 28%;
+padding: 10px 10 10 10;
+}
+.navbar{
+background-color: #efefef;
+border-radius: 30px;
+}
+.navbar ul{
+overflow:auto;
+}
+.navbar li{
+float:left;
+list-style: none;
+font-size: 20px;
+margin: 9px 4px;
+}
+.navbar li a{
+padding:20px 19px;
+text-decoration: none;
+color:black;
+}
+.navbar li a:hover {
+color: red;
+}
+</style>
+<body>
+<center><h1 class="board_head">Electricity Board Web Services</h2></center>
+<header>
+<nav class="navbar">
+<ul>
+<li><a href="adminHomePage.html">Home</a></li>
+<li><a href="adminprofile.html">Profile</a></li>
+<li><a href="admincreatebill.html">Create Bills</a></li>
+<li><a href="admincreatereceipt.html">Create Reciepts</a></li>
+<li><a href="adminviewbill.php">View Bills</a></li>
+<li><a href="adminviewusers.php"> View Users</a></li>
+<li><a href="admincreateannouncements.html">Announcements</a></li>
+<li><a href="adminaboutpage.html">About</a></li></div>
+</ul>
+</nav>
+</header>
+<div style="margin-left: 2%;">
+<h1 style="margin-top: 4%;">About Us</h1>
+<img class="imglogo" src="ceylon-electricity-board-logo.png" width="100px" height="100px">
+<p>
+Electricity Bill Payment System is an online operated bill payment system that gives consumers details about their usage on monthly basis. Users no longer need to wait in electricity offices to pay their bills. This system outruns the conventional processes of paying electricity bills. <br>
+<p>Consumers will be able to manage their billing cycles and will also be to pay their bills on time. This system provides details of the users regarding their consumption (in units). There will be two sides in this system: Admin (Biller) side and Consumer (User) side. This system reminds the users to pay their bill on time. </p>
+</p>
+<p>
+The electricity bills can be paid from anywhere, anytime. The system helps in paying bills on time and reminds the users about the payment due date through alerts. Informs about all the past transactions, monthly amount of
+electricity used, current cost of each unit, etc. It is convenient, reliable and secure. Users will get an instant confirmation once bill is paid.
+</p>
+<p>
+We hope to provide you the best experience possible and a very easy way to pay your monthly electricity bills.
+</p>
+</div>
+</body>
+</html>
+<!-- profile Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="profile.css">
+<style>
+h2{
+text-align: center;
+}
+body {
+padding: 0;
+margin: 0;
+color: black;
+}
+h3{
+margin-top: 20%;
+}
+.student-profile .table th,
+.student-profile .table td {
+font-size: 14px;
+padding: 5px 10px;
+color: #000;
+}
+.board_head{
+border:solid;
+border-radius: 10px;
+margin-left: 30%;
+margin-right: 20%;
+padding: 10px 10 10 10;
+}
+.navbar{
+background-color: #efefef;
+border-radius: 30px;
+}
+.navbar ul{
+overflow:auto;
+}
+.navbar li{
+float:left;
+list-style: none;
+font-size: 20px;
+margin: 0px 24px;
+}
+.navbar li a{
+padding:5px 34px;
+text-decoration: none;
+color:black;
+}
+.navbar li a:hover {
+color: red;
+}
+</style>
+<!-- Google Fonts -->
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+</head>
+<body style="background-color: #caebf2; margin-top: 1%;">
+<center><h1 class="board_head">Electricity Board Web Services</h2></center>
+<header>
+<nav class="navbar">
+<ul>
+<li><a href="custHomepage.html">Home</a></li>
+<li><a href="custviewbills.html">Bills</a></li>
+<li><a href="custviewpasttransactions.html">Past Transactions</a></li>
+<li><a href="custsppa.html">SPPA</a></li>
+<li><a href="custfeedback.html">Feedback</a></li>
+<li><a href="custprofile.html">Profile</a></li>
+<li><a href="custaboutpage.html">About</a></li>
+</ul>
+</nav>
+</header>
+<center>
+<div class="col-lg-8" style="margin-top: 1%;">
+<div class="card shadow-sm">
+<div class="card-header bg-transparent border-0">
+<h3 class="mb-0"><i class="far fa-clone pr-1"></i>My Profile</h3>
+</div>
+<div class="card-body pt-0">
+<table class="table table-bordered" style="background-color: azure;">
+<tr>
+<th width="30%">Customer ID</th>
+<td width="2%">1</td>
+</tr>
+<tr>
+<th width="30%">First name</th>
+<td width="2%">Abhinav</td>
+</tr>
+<tr>
+<th width="30%">Last Name </th>
+<td width="2%">Krishna</td>
+</tr>
+<tr>
+<th width="30%">Phone number</th>
+<td width="2%">9932190315</td>
+</tr>
+<tr>
+<th width="30%">Aadhar Number</th>
+<td width="2%">21344568091</td>
+</tr>
+<tr>
+<th width="30%">DOB</th>
+<td width="2%">11-OCT-98</td>
+</tr>
+<tr>
+<th width="30%">Meter Number</th>
+<td width="2%">18486877</td>
+</tr>
+<tr>
+<th width="30%">Category</th>
+<td width="2%">Domestic</td>
+</tr>
+<tr>
+<th width="0%">House No</th>
+<td width="30%">12</td>
+</tr>
+<tr>
+<th width="30%">Street Name</th>
+<td width="2%">Amba Nagar</td>
+</tr>
+<tr>
+<th width="30%">Pincode</th>
+<td width="2%">695024</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="height: 26px"></div>
+<div class="card shadow-sm">
+</div>
+</div>
+</div>
+</div>
+</div>
+</center>
+</body>
+</html>
+<!-- Customer Home Page -->
+<html>
+<style>
+.board_head{
+border:solid;
+border-radius: 10px;
+margin-left: 35%;
+margin-right: 33%;
+padding: 10px 10 10 10;
+}
+.navbar{
+background-color: #efefef;
+border-radius: 30px;
+}
+.navbar ul{
+overflow:auto;
+}
+.navbar li{
+float:left;
+list-style: none;
+font-size: 20px;
+margin: 13px 20px;
+}
+.navbar li a{
+padding:20px 34px;
+text-decoration: none;
+color:black;
+}
+.navbar li a:hover {
+color: red;
+}
+.cust_home_content{
+border:solid;
+padding: 20px 20px 20px 20px;
+float:left;
+margin-left: 2%;
+margin-top: 1%;
+margin-right: 45%;
+width: 50%;
+}
+.cust_home_updates{
+position: absolute;
+border:solid;
+padding: 20px 20px 20px 20px;
+float:right;
+margin-top: 1%;
+margin-left: 55%;
+width: 40%;
+}
+.container {
+width: 100%;
+margin: auto;
+clear: both;
+}
+</style>
+<body style="background-color: #caebf2 ;margin-top:1%;">
+<center><h1 class="board_head">Electricity Board Web Services</h2></center>
+<header>
+<nav class="navbar">
+<ul>
+<li><a href="custHomepage.html">Home</a></li>
+<li><a href="custviewbills.html">Bills</a></li>
+<li><a href="custviewpasttransactions.html">Past Transactions</a></li>
+<!-- li><a href="custsppa.html">SPPA</a>li> -->
+<li><a href="custviewannouncement.php">View Announcements</a></li>
+<li><a href="custprofile.html">Profile</a></li>
+<li><a href="custaboutpage.html">About</a></li>
+</ul>
+</nav>
+</header>
+<div class="container">
+<div class="cust_home_content" style="font-size: 20px;background-color: #e7f7fa;">
+<b>Welcome to the Electricity Board Web Services</b><br><br>
+The system provides details of electricity consumed by the
+customers.<br>The admin of the electricity board generated bill every month based on the electricity consumed
+by customers in terms of number of UNITS.<br><br> The bill is generated by calculating the units of electricity as
+the difference from current total number of units to the previous month’s total units. The resultant units are
+multiplied by the cost of each unit that is fixed by the board. <br><Br>
+The admin of the electricity board has details
+of customers in its operating range (like customer number, address, previous reading, current reading,
+charge per unit, etc.). The customer can login to the board’s site with his number and be able to view all the
+past transaction details, current amount to be paid, number of units utilized, arrears, last date to pay the bill,
+etc. The admin can verify the bill status of customers. If the bill is not paid over a specified period an alert
+will be sent to customer beyond which the connection will be discontinued. The status of customer’s bill
+can be verified by the admin and be updated.
+</div>
+<div class="cust_home_updates" style="font-size: 20px;background-color: #e7f7fa;">
+<b>Announcements</b><br><Br>
+<marquee width="60%" direction="up" height="100px">
+Current Rate has been changed to Rs.3 per Unit.<br><br>
+You will recieve this month's Electricity Bill shortly.
+</marquee>
+<br><br>
+<b>General</b><br><Br>
+Join <a href="custsppa.html" style="text-decoration: none;">SPPA</a> now to get Subsidies!!<br><br>
+Give us your <a href="custfeedback.html"style="text-decoration: none;">Feedback</a>.<br><br>
+</div>
+<div class="clear"></div>
+</div>
+</body>
+</html>
